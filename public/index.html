@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todito</title>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="edit.css">
+    <link rel="icon" type="image/png" href="bxs-dice-6.svg">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box sour" id="texto-div">
+            <div class="palabra" id="palabra1">
+                Tomas <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra1')"></i>
+            </div>
+            <div class="palabra" id="palabra2">
+                Ordenas <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra2')"></i>
+            </div>
+            <div class="palabra" id="palabra3">
+                Derecha <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra3')"></i>
+            </div>
+            <div class="palabra" id="palabra4">
+                Izquierda <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra4')"></i>
+            </div>
+            <div class="palabra" id="palabra5">
+                Todos <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra5')"></i>
+            </div>
+            <div class="palabra" id="palabra6">
+                Ordenas <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra6')"></i>
+            </div>
+        </div>
+
+        <!-- Modal para editar palabra -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3>Editar Palabra</h3>
+                <input type="text" id="input-palabra" />
+                <div class="modal-buttons">
+                    <button onclick="guardarPalabra()">Guardar</button>
+                    <button onclick="cancelarEdicion()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="titillium " id="dado">1</div> <!-- Dado con número inicial -->
+            <button class="sour" id="boton-tirar">Lanzar dado</button> <!-- Botón para tirar el dado -->
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="edit.js"></script>
+</body>
+
+</html>
