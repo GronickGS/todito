@@ -1,0 +1,11 @@
+
+.color{
+    animation: cambioColor 3s infinite; /* Animación infinita */
+  }
+
+  @keyframes cambioColor {
+    0% { color: rgb(255, 255, 255); }
+    33% { color: #26819F; }
+    66% { color: rgb(122, 245, 208); }
+    100% { color:  rgb(255, 255, 255); } /* Regresa al color inicial */
+  }

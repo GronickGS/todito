@@ -17,6 +17,7 @@
   }
 /* Estilos básicos */
 body {
+    background-color: black;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -35,8 +36,8 @@ body {
 
 .box {
     width: 30%;
-    background-color: #f2f2f2;
-    border: 5px solid #ccc;
+    background-color: #000000;
+    border: 5px solid #26819F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +49,7 @@ body {
 #dado {
     font-size: 150px;
     font-weight: bold;
+    color: #e2e2e2;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
@@ -56,14 +58,14 @@ body {
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #26819F;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 #boton-tirar:hover {
-    background-color: #45a049;
+    background-color: #0A3154;
 }
 
 #texto-div {
@@ -86,7 +88,7 @@ body {
 }
 
 .verde {
-    background-color: #4CAF50;
+    background-color: #0D5578;
     color: white;
 }
 
@@ -104,11 +106,11 @@ body {
 
     #texto-div {
         order: 1; /* #texto-div se coloca primero */
-        width: 100%;
+        width: 80%;
     }
 
     .box {
-        width: 90%; /* Ajustar el ancho de cada .box en móviles */
+        width: 80%; /* Ajustar el ancho de cada .box en móviles */
         margin-bottom: 20px;
     }
 }

@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todito</title>
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="edit.css">
-    <link rel="icon" type="image/png" href="bxs-dice-6.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edit.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/sonido.css">
+    <link rel="icon" type="image/png" href="img/bxs-dice-6.svg">
 
 </head>
 
 <body>
     <div class="container">
+
         <div class="box sour" id="texto-div">
-            <div class="palabra" id="palabra1">
-                Tomas <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra1')"></i>
-            </div>
-            <div class="palabra" id="palabra2">
-                Ordenas <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra2')"></i>
-            </div>
-            <div class="palabra" id="palabra3">
-                Derecha <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra3')"></i>
-            </div>
-            <div class="palabra" id="palabra4">
-                Izquierda <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra4')"></i>
-            </div>
-            <div class="palabra" id="palabra5">
-                Todos <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra5')"></i>
-            </div>
-            <div class="palabra" id="palabra6">
-                Ordenas <i class='bx bxs-edit-alt edit-icon' onclick="editarPalabra('palabra6')"></i>
-            </div>
+
+            <div class="palabra" id="palabra1">Tomas</div>
+            <div class="palabra" id="palabra2">Ordenas</div>
+            <div class="palabra" id="palabra3">Derecha</div>
+            <div class="palabra" id="palabra4">Izquierda</div>
+            <div class="palabra" id="palabra5">Todos</div>
+            <div class="palabra" id="palabra6">Ordenas</div>
+            <button class="sour sonido_boton" id="boton-audio" style="background-color: #26819F; color: white;">
+                <i class='bx bxs-volume-full'></i>
+            </button>
         </div>
+        <div class="box">
+            <div class="titillium color_dado color" id="dado">1</div>
+            <button class="sour" id="boton-tirar">Lanzar dado</button>
+        </div>
+
+        <!-- Agregar elementos de audio -->
+        <audio id="audio1" src="audio/audio1.mp3"></audio>
+        <audio id="audio2" src="audio/audio2.mp3"></audio>
+        <audio id="audio3" src="audio/audio3.mp3"></audio>
+        <audio id="audio4" src="audio/audio4.mp3"></audio>
+        <audio id="audio5" src="audio/audio5.mp3"></audio>
+        <audio id="audio6" src="audio/audio6.mp3"></audio>
 
         <!-- Modal para editar palabra -->
         <div id="modal" class="modal">
@@ -46,14 +53,13 @@
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="titillium " id="dado">1</div> <!-- Dado con número inicial -->
-            <button class="sour" id="boton-tirar">Lanzar dado</button> <!-- Botón para tirar el dado -->
-        </div>
+
+
 
     </div>
-    <script src="app.js"></script>
-    <script src="edit.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/edit.js"></script>
+    <script src="js/audio.js"></script>
 </body>
 
 </html>
